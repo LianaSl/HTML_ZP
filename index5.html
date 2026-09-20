@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liana Šljonkina — Kontakt</title>
+    <link rel="stylesheet" href="style5.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">HLAVNÍ</a></li>
+                <li><a href="index1.html">O MNĚ</a></li>
+                <li><a href="index2.html">CERTIFIKÁTY</a></li>
+                <li><a href="index3.html">FOTOGALERIE</a></li>
+                <li><a href="#">E-SHOP</a></li>
+                <li><a href="index5.html" class="active">KONTAKT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <aside class="aside">
+        <div class="parent">
+            <div class="contact-block">
+                <h1 class="contact-title">Kontakt</h1>
+                <p class="contact-text">
+                    Děkuji, že jste se dostali až na poslední stránku mého webu.<br>
+                    Těší mě, že vás zde prezentované informace zaujaly.<br>
+                    Pokud chcete, můžete mi napsat osobní zprávu<br>
+                    nebo mě najít a sledovat na mých sociálních sítích.
+                </p>
+                <div class="divider"></div>
+                <div class="socials">
+                    <a class="social-link" href="https://www.instagram.com/liana_bizne/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a class="social-link" href="https://www.linkedin.com/in/liana-%C5%A1ljonkina/" target="_blank">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a class="social-link" href="https://github.com/LianaSl" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+                <button id="open-modal-btn" class="btn-contact">Napsat zprávu</button>
+            </div>
+        </div>
+    </aside>
+
+    <footer class="footer">
+        <div>© created by <a href="mailto:sljonkina@gmail.com">Liana Šljonkina</a></div>
+    </footer>
+
+    <div class="modal-overlay" id="modal">
+        <div class="modal">
+            <button id="modal-close-btn" class="modal-close">&times;</button>
+            <h2>Napište mi</h2>
+            <form id="contact-form" action="https://formspree.io/f/mvzwkqwl" method="POST">
+                <div class="field-wrap">
+                    <label for="iname">Jméno</label>
+                    <input type="text" id="iname" name="name" placeholder="Vaše jméno">
+                </div>
+                <div class="field-wrap">
+                    <label for="iemail">E-mail</label>
+                    <input type="email" id="iemail" name="email" placeholder="vas@email.cz">
+                </div>
+                <div class="field-wrap">
+                    <label for="imessage">Zpráva</label>
+                    <textarea id="imessage" name="message" placeholder="Vaše zpráva..."></textarea>
+                </div>
+                <button type="submit" class="btn-send">Odeslat zprávu</button>
+            </form>
+            <div id="success-msg" class="success-msg" style="display:none;">
+                ✅ Děkuji! Vaše zpráva byla odeslána.
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
