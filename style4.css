@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 15vh 1fr 8vh; /* шапка, контент, подвал */
+    overflow: hidden;
+}
+
+.header {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(
+        to right,
+        rgb(55, 122, 223),
+        rgb(99, 160, 184),
+        rgb(241, 146, 146)
+    );
+}
+
+main {
+    min-height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0; 
+    background: linear-gradient(to right, rgb(231, 142, 144) 50%, rgb(48, 114, 211) 50%);
+}
+
+.content-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    position: relative;
+}
+
+.main-photo {
+    display: block;
+    height: 100%;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    margin-left: 160px; /* Сдвинули фото еще чуть-чуть вправо */
+    
+    /* Плавное растворение краёв фото */
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+/* === КНОПКА "ДОБРО ПОЖАЛОВАТЬ В МАГАЗИН" === */
+.shop-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 30px;
+    font-family: 'EB Garamond', serif;
+    font-size: 28px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(5, 114, 187);
+    background: linear-gradient(135deg, rgb(241, 200, 205), rgb(214, 229, 242));
+    border: none;
+    border-radius: 20px;
+    box-shadow:
+        0 0 15px 5px rgb(241, 146, 146),
+        0 0 30px 10px rgb(99, 160, 184);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    white-space: nowrap;
+
+    /* Позиция: по центру страницы, ниже */
+    position: absolute;
+    left: 60%;
+    bottom: 40vh;
+    transform: translateX(-50%);
+}
+
+.shop-btn:hover {
+    transform: translateX(-50%) scale(1.05);
+    box-shadow:
+        0 0 20px 6px rgb(241, 146, 146),
+        0 0 35px 12px rgb(99, 160, 184);
+}
+.nav { width: 100%; }
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    padding: 16px 24px;
+    margin: 0;
+}
+
+.nav ul li { cursor: pointer; }
+
+/* === КНОПКИ МЕНЮ === */
+.nav ul li a {
+    display: inline-block;
+    padding: 10px 26px;
+    font-family: 'EB Garamond', serif;
+    font-size: 40px;
+    text-decoration: none;
+    color: rgb(5, 114, 187);
+    background: rgb(214, 229, 242);
+    border: none;
+    border-radius: 20px;
+    box-shadow:
+        0 0 15px 5px rgb(241, 146, 146),
+        0 0 30px 10px rgb(99, 160, 184);
+    transition: transform 0.3s ease;
+}
+
+.nav ul li a:hover {
+    transform: scale(1.05);
+}
+
+.nav ul li a.active {
+    background: linear-gradient(135deg, rgb(241, 200, 205), rgb(214, 229, 242));
+    color: rgb(13, 63, 143);
+}
+
+.footer {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 0 25px 10px;
+    font-size: 18px;
+    color: white;
+    font-family: "EB Garamond", serif;
+    background-image: linear-gradient(
+        to left,
+        rgb(55, 122, 223),
+        rgb(99, 160, 184),
+        rgb(241, 146, 146)
+    );
+}
+
+.footer a {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    body { grid-template-rows: auto 1fr 8vh; overflow: auto; }
+    .header { height: auto; padding: 16px 20px; }
+    .nav ul { flex-wrap: wrap; justify-content: center; gap: 20px; padding: 10px 16px; }
+    .content-wrap { flex-direction: column; height: auto; gap: 20px; padding: 20px; }
+    .main-photo { max-width: 100%; height: auto; width: 250px; margin-left: 0; }
+    .shop-btn { font-size: 22px; padding: 10px 20px; margin: 0; }
+}
