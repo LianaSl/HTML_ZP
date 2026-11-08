@@ -39,7 +39,7 @@ body {
 
 .nav ul li { cursor: pointer; }
 
-/* === КНОПКИ МЕНЮ (свечение как у фото) === */
+
 .nav ul li a {
     display: inline-block;
     padding: 10px 26px;
@@ -60,7 +60,7 @@ body {
     transform: scale(1.05);
 }
 
-/* текущая страница */
+
 .nav ul li a.active {
     background: linear-gradient(135deg, rgb(241, 200, 205), rgb(214, 229, 242));
     color: rgb(13, 63, 143);
@@ -89,7 +89,7 @@ body {
     .nav ul li a { font-size: 22px; padding: 8px 16px; }
 }
 
-/* kontakt str.   */
+
 
 .aside {
     flex: 1;
@@ -183,7 +183,7 @@ body {
 
 .btn-contact:hover { opacity: 0.9; transform: translateY(-2px); }
 
-/* === ОКНО «NAPSAT ZPRÁVU» === */
+
 .modal-overlay {
     display: none;
     position: fixed;
@@ -195,7 +195,7 @@ body {
     justify-content: center;
 }
 
-/* класс, который добавляет script.js */
+
 .modal-overlay.modal-open { display: flex; }
 
 .modal-overlay:target { display: flex; }
@@ -265,4 +265,5 @@ body {
     font-size: 1rem;
     color: rgb(38, 70, 130);
     background: #fafcff;
-    transition:
+     transition: border-color 0.2s, box-shadow 0.2s;
+}

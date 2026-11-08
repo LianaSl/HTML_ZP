@@ -1,6 +1,3 @@
-// ===== CONTACTS MODULE =====
-// Events: click (open/close modal), input (live validation), blur (on-leave validation), submit
-
 // --- DOM ---
 const openBtn      = document.getElementById('open-modal-btn');
 const modalOverlay = document.getElementById('modal');

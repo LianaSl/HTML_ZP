@@ -39,7 +39,7 @@ body {
 
 .nav ul li { cursor: pointer; }
 
-/* === КНОПКИ МЕНЮ (свечение как у фото) === */
+
 .nav ul li a {
     display: inline-block;
     padding: 10px 26px;
@@ -60,7 +60,7 @@ body {
     transform: scale(1.05);
 }
 
-/* текущая страница */
+
 .nav ul li a.active {
     background: linear-gradient(135deg, rgb(241, 200, 205), rgb(214, 229, 242));
     color: rgb(13, 63, 143);
@@ -89,7 +89,7 @@ body {
     .nav ul li a { font-size: 22px; padding: 8px 16px; }
 }
 
-/* ===== CERTIFIKÁTY PAGE ===== */
+
 
 .main-content {
     flex: 1;

@@ -56,14 +56,13 @@ main {
     width: auto;
     max-width: 100%;
     object-fit: contain;
-    margin-left: 150px; /* Сдвинули фото еще чуть-чуть вправо */
+    margin-left: 150px; 
     
-    /* Плавное растворение краёв фото */
+   
     -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
     mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
 }
 
-/* === КНОПКА "ДОБРО ПОЖАЛОВАТЬ В МАГАЗИН" === */
 .shop-btn {
     display: inline-flex;
     align-items: center;
@@ -84,7 +83,7 @@ main {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     white-space: nowrap;
 
-    /* Позиция: по центру страницы, ниже */
+    
     position: absolute;
     left: 60%;
     bottom: 40vh;
@@ -112,7 +111,7 @@ main {
 
 .nav ul li { cursor: pointer; }
 
-/* === КНОПКИ МЕНЮ === */
+
 .nav ul li a {
     display: inline-block;
     padding: 10px 26px;
