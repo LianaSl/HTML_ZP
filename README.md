@@ -19,7 +19,7 @@ I have been working in IT for about three years. I started as a software tester 
 | E-shop | `index4.html` | `style4.css` |
 | Contact (Kontakt) | `index5.html` | `style5.css` |
 
-The **E-SHOP** button in the navigation menu opens the page of the online shop.
+The **E-SHOP** button in the navigation menu leads to the online shop.
 
 ## Project structure
 
@@ -51,15 +51,10 @@ HTML_ZP/
 
 ## E-shop
 
-The online shop "FLORENTINA" is a separate project built with **Django (Python)**.
+The online shop is a separate project built with **Django (Python)**.
 
-- Repository: https://github.com/LianaSl/Django_ZP
-
-> **Note:** the button on the E-SHOP page leads to `http://127.0.0.1:8000/shop/`,
-> i.e. to a Django server running locally. To open the shop, first start the Django
-> project (see the README in the repository above, command `python manage.py runserver`).
-> On the live GitHub Pages site the button therefore works only while the local
-> server is running.
+- Repository: _add link here_
+- Live demo: _add link here_
 
 ## Run locally
 
@@ -68,8 +63,6 @@ The online shop "FLORENTINA" is a separate project built with **Django (Python)*
    git clone https://github.com/LianaSl/HTML_ZP.git
    ```
 2. Open `index.html` in your browser.
-3. To open the e-shop from the E-SHOP page, start the Django project from the
-   repository https://github.com/LianaSl/Django_ZP (instructions are in its README).
 
 ## Contact
 
