@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+body,
+button,
+input,
+textarea {
+    font-family: 'EB Garamond', serif;
+}
+
 body {
     min-height: 100vh;
     display: flex;
@@ -265,5 +272,54 @@ body {
     font-size: 1rem;
     color: rgb(38, 70, 130);
     background: #fafcff;
-     transition: border-color 0.2s, box-shadow 0.2s;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* ===== formulář: pole, tlačítko, zpráva o úspěchu ===== */
+
+.field-wrap { margin-bottom: 15px; }
+
+.modal input:focus,
+.modal textarea:focus {
+    outline: none;
+    border-color: rgb(241, 146, 146);
+    box-shadow: 0 0 8px rgba(241, 146, 146, 0.5);
+}
+
+.modal textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.btn-send {
+    display: flex;
+    margin: 16px auto 0;
+    padding: 0.7rem 2rem;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(135deg, rgb(55, 122, 223) 0%, rgb(241, 146, 146) 100%);
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-size: 0.88rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.success-msg {
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.4rem;
+    color: rgb(38, 70, 130);
+}
+
+body p,
+.contact-text,
+.about-hero p,
+.card p {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.35rem;
+    font-style: normal;
+    line-height: 1.7;
+    color: rgb(30, 80, 140);
 }

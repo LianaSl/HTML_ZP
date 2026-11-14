@@ -3,6 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+body,
+button,
+input,
+textarea {
+    font-family: 'EB Garamond', serif;
+}
 
 body {
     min-height: 100vh;
@@ -158,4 +164,15 @@ body {
 @media (max-width: 480px) {
     .gallery-section { padding: 30px 20px; }
     .gallery-grid { grid-template-columns: 1fr; gap: 20px; }
+}
+
+body p,
+.contact-text,
+.about-hero p,
+.card p {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.35rem;
+    font-style: normal;
+    line-height: 1.7;
+    color: rgb(30, 80, 140);
 }
