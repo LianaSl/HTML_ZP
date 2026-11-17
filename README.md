@@ -19,49 +19,22 @@ I have been working in IT for about three years. I started as a software tester 
 | E-shop | `index4.html` | `style4.css` |
 | Contact (Kontakt) | `index5.html` | `style5.css` |
 
-The **E-SHOP** button in the navigation menu leads to the online shop.
-
-## Project structure
-
-```
-HTML_ZP/
-├── asets/          # images (photos, certificates, shop pictures)
-├── index.html
-├── index1.html
-├── index2.html
-├── index3.html
-├── index4.html
-├── index5.html
-├── script.js
-├── style.css
-├── style1.css
-├── style2.css
-├── style3.css
-├── style4.css
-└── style5.css
-```
-
 ## Technologies
 
-- HTML5
-- CSS3
-- JavaScript
+- HTML5, CSS3, JavaScript
 - Google Fonts: EB Garamond, Playfair Display
 - Hosted on GitHub Pages
 
 ## E-shop
 
-The online shop is a separate project built with **Django (Python)**.
+The online shop "FLORENTINA" is a separate Django project:
+https://github.com/LianaSl/Django_ZP
 
-- Repository: _add link here_
-- Live demo: _add link here_
+The button on the E-SHOP page opens `http://127.0.0.1:8000/shop/`, so the Django project must be running locally (`python manage.py runserver`).
 
 ## Run locally
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/LianaSl/HTML_ZP.git
-   ```
+1. Clone the repository: `git clone https://github.com/LianaSl/HTML_ZP.git`
 2. Open `index.html` in your browser.
 
 ## Contact
